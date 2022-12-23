@@ -288,7 +288,7 @@ void Share<DataType>::print_in_list (Print& printer)
     printer.printf ("%-16sshare\t", name);
 
     // End the line
-    printer << endl;
+    // printer << endl;
 
     // Call the next item
     if (p_next != NULL)
