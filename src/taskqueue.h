@@ -584,25 +584,25 @@ inline bool Queue<dataType>::ISR_butt_in (const dataType item)
 template <class dataType>
 void Queue<dataType>::print_in_list (Print& print_dev)
 {
-    // Print this task's name and pad it to 16 characters
-    print_dev.printf ("%-16squeue\t", name);
+    // // Print this task's name and pad it to 16 characters
+    // print_dev.printf ("%-16squeue\t", name);
 
-    // Print the free and total number of spaces in the queue or an error
-    // message if this queue can't be used (probably due to a memory error)
-    if (usable ())
-    {
-        print_dev << max_full << '/' << buf_size << endl;
-    }
-    else
-    {
-        print_dev << "UNUSABLE" << endl;
-    }
+    // // Print the free and total number of spaces in the queue or an error
+    // // message if this queue can't be used (probably due to a memory error)
+    // if (usable ())
+    // {
+    //     print_dev << max_full << '/' << buf_size << endl;
+    // }
+    // else
+    // {
+    //     print_dev << "UNUSABLE" << endl;
+    // }
 
-    // Call the next item
-    if (p_next != NULL)
-    {
-        p_next->print_in_list (print_dev);
-    }
+    // // Call the next item
+    // if (p_next != NULL)
+    // {
+    //     p_next->print_in_list (print_dev);
+    // }
 }
 
 #endif  // _TASKQUEUE_H_
